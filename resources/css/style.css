@@ -1,25 +1,59 @@
 /* Universal Styles */
 
 html {
-  font-family: "Helvetica", sans-serif;
   font-size: 16px;
-  background-color: white;
+  background-color: #FEFEFE;
 }
 
-body {
-  line-height: 1.4;
+p {
+  line-height: 1.6;
+  font-family: "Open+Sans", sans-serif;
 }
 
 h3 {
   font-weight: bold;
   font-size: 2rem;
-  padding: 12px 0px;
+  padding: 1rem 0rem;
+  font-family: "Montserrat";
+  color: #272F35;
 }
 
 h4 {
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 1.6;
+  margin-bottom: 1rem;
+  font-family: "Montserrat";
+  color: #272F35;
+}
+
+h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+  padding-right: 50px;
+  font-weight: bold;
+  font-family: "Montserrat";
+  color: #272F35;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  margin-top: 1.5rem;
+  font-family: "Montserrat";
+  color: #272F35;
+}
+
+span {
+  font-weight: bold;
+  line-height: 1.6;
+  font-family: "Open+Sans", sans-serif;
+}
+
+.item a {
+  font-family: "Open+Sans", sans-serif;
+  margin-top: 1rem;
 }
 
 /* Header */
@@ -27,6 +61,7 @@ h4 {
 .container {
   display: flex;
   justify-content: space-between;
+  border-bottom: 2px #DCE3E7 solid;
 }
 
 nav {
@@ -56,20 +91,45 @@ nav li {
   padding: 0 0.5rem;
 }
 
+.menu li:hover {
+  font-family: "Montserrat";
+  font-weight: normal;
+  font-size: 1rem;
+  color:#A4A7A9;
+}
+
+.menu li {
+  font-family: "Montserrat";
+  font-weight: bold;
+  font-size: 1rem;
+  color: #272F35;
+  text-transform: uppercase;
+}
+
+.menu li:last-child {
+  color: #64AFF1;
+}
+
+.logo span {
+  font-size: 1.4rem;
+}
+
+.logo span:last-child {
+  color:#A4A7A9;
+}
+
 /* Banner */
 
 #banner {
-background-color: #d8d8d8;
+background-color: #DCE3E7;
 display: flex;
 justify-content: space-between;
 align-items: center;
 height: auto;
-border: 3px solid yellow;
 }
 
 .banner-img {
   width: 100%;
-  border:2px solid red;
 }
 
 .banner-img img {
@@ -84,26 +144,23 @@ border: 3px solid yellow;
   width: 40%;
   padding-left: 32px;
   padding-right: 32px;
-  border: 3px solid blue;
 }
 
-h2 {
-  font-size: 3rem;
-  line-height: 1.2;
-  padding-right: 50px;
-}
-
-span {
-  font-size: 1.5rem;
-  padding-right: 50px;
-}
-
-.cta {
-  background-color: red;
+.cta span{
+  background-color: #64AFF1;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem 0;
+  margin: 2rem 0;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  transition-duration: 1s;
+  transition-property: color;
+}
+
+.cta span:hover {
+  color: #ffffff;
 }
 
 /* Features */
@@ -111,8 +168,8 @@ span {
 #features {
   display: flex;
   height: 700px;
-  border:4px solid green;
   padding-bottom: 32px;
+  background-color: #FAFBFC;
 }
 
 .main-story {
@@ -123,7 +180,6 @@ span {
 }
 
 .stories {
-  border: 2px solid pink;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -134,6 +190,11 @@ span {
 .stories .item {
   display: flex;
   flex-direction: row;
+  border-bottom: 2px #DCE3E7 solid;
+}
+
+.stories .item:hover {
+  background-color: #DCE3E7;
 }
 
 .item img {
@@ -152,7 +213,11 @@ span {
 .item {
   display: flex;
   align-items: center;
-  border: 3px solid orange;
+}
+
+p.source {
+  padding-top: 2rem;
+  font-style: italic;
 }
 
 /* Learning */
@@ -162,7 +227,7 @@ span {
   align-items: center;
   justify-content: center;
   padding-top: 32px;
-  padding-bottom: 32px;
+  background-color: #DCE3E7;
 }
 
 #boxes {
@@ -170,8 +235,7 @@ span {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  border: 4px solid black;
-  background-color: #d8d8d8;
+  background-color: #DCE3E7;
 }
 
 .course img {
@@ -180,7 +244,6 @@ span {
 }
 
 .course {
-  border:3px solid blue;
   margin: 10px;
   width: 25%;
   height: auto;
@@ -189,12 +252,9 @@ span {
   background-color: white;
 }
 
-p {
-  font-size: 1rem;
-}
-
 .course-text {
   padding: 16px 16px;
+  margin-bottom: 10px;
 }
 
 /* Thesis */
@@ -202,8 +262,8 @@ p {
 #thesis {
   display: flex;
   height: 700px;
-  border:4px solid green;
   padding-bottom: 32px;
+  background-color: #FAFBFC;
 }
 
 /* Footer */
@@ -211,12 +271,17 @@ p {
 #footer {
   display: flex;
   justify-content: space-between;
-  border-top: 1px #4a4a4a solid;
+  border-top: 2px #DCE3E7 solid;
   padding: 16px 24px;
+  background-color: #FEFEFE;
+  color: #272F35;
 }
 
 .last {
   display: block;
   padding-left: 16px;
-  border: 2px solid yellow;
+}
+
+.last li {
+  font-family: "Montserrat";
 }
