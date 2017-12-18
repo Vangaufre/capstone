@@ -332,10 +332,6 @@ p.source {
     display: block;
     border:2px solid red;
   }
-  .stories .item {
-    display: block;
-    flex-direction: column;
-  }
   .text {
     width: auto;
   }
@@ -398,10 +394,36 @@ p.source {
 }
 
 @media only screen and (max-width: 560px) {
-  #boxes {
-    display: none;
+  .course {
+  display: none;
   }
-  ul .boxes-mobile {
+ .boxes-mobile, .box-mob {
+  display: block;
+  background-color: #FEFEFE;
+  }
+
+  .boxes-mobile {
+    width: auto;
+    border: 2px solid purple;
+  }
+
+  h4 {
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-family: "Montserrat";
+    color: #272F35;
+  }
+
+  h4:hover {
+    font-family: "Montserrat";
+    color: white;
+    background-color: #4a90e2;
+    font-weight: 600;
+    padding: 1rem;
+    margin: 5px 10px;
+    font-size: 1rem;
   }
 }
 
@@ -435,6 +457,9 @@ p.source {
 }
 
 @media only screen and (max-width: 560px) {
+  .sidebar,.item {
+    display: none;
+  }
 }
 
 /* Footer */
