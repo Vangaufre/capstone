@@ -10,6 +10,15 @@ p {
   font-family: "Open+Sans", sans-serif;
 }
 
+h5 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  font-family: "Montserrat";
+  color: #272F35;
+}
+
 h3 {
   font-weight: bold;
   font-size: 2rem;
@@ -62,7 +71,6 @@ span {
   display: flex;
   justify-content: space-between;
   border-bottom: 2px #DCE3E7 solid;
-  border:3px solid yellow;
   top: 0px;
   height: 64px;
   width:100%;
@@ -82,18 +90,17 @@ nav div {
 }
 
 nav img {
-  height: 3rem;
-  margin-left: 2rem;
-  margin-right: 1rem;
+  height: 44px;
+  padding-left: 24px;
 }
 
 nav ul {
-  margin-right: 0.5rem;
+  margin-right: 24px;
 }
 
 nav li {
   display: inline;
-  padding: 0 0.5rem;
+  padding-left: 16px;
 }
 
 .menu li:hover {
@@ -139,7 +146,7 @@ nav li {
   }
 
   .menu ul.truncated-menu {
-    display: block;
+    display: flex;
   }
 
   .logo span {
@@ -198,27 +205,21 @@ margin-top: 64px;
     display: flex;
     flex-direction: column;
     width: 100%;
-    border:2px solid blue;
   }
   .banner-img {
     width: auto;
-    border:3px solid green;
-  }
-  .banner-img img {
-    border:2px solid red;
   }
   .banner-text {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding:32px 16px;
+    padding:16px 16px;
     width: auto;
-    border: 2px solid orange;
   }
 
   h2 {
     font-size: 2rem;
-    line-height: 1;
+    line-height: 1.2;
     padding-right: 50px;
     font-weight: bold;
     font-family: "Montserrat";
@@ -228,7 +229,7 @@ margin-top: 64px;
   h1 {
     font-weight: normal;
     font-size: 1rem;
-    line-height: 1;
+    line-height: 1.6;
     margin-top: 1rem;
     font-family: "Montserrat";
     color: #272F35;
@@ -251,8 +252,7 @@ margin-top: 64px;
 
 #features {
   display: flex;
-  height: 700px;
-  padding-bottom: 32px;
+  height: auto;
   background-color: #FAFBFC;
 }
 
@@ -284,7 +284,6 @@ margin-top: 64px;
 
 .stories .item {
   display: flex;
-  min-height: 150px;
   flex-direction: row;
   border-bottom: 2px #DCE3E7 solid;
 }
@@ -295,7 +294,6 @@ margin-top: 64px;
 
 .item img {
   width:35%;
-  height: auto;
   height: auto;
   padding: 32px 16px;
 }
@@ -330,7 +328,7 @@ p.source {
   }
   .stories.item,.mobile {
     display: block;
-    border:2px solid red;
+    width:100%;
   }
   .text {
     width: auto;
@@ -346,9 +344,25 @@ p.source {
   .stories .item {
     display: flex;
     flex-direction: column;
+    border:none;
   }
   .mobile img {
     padding: 0px;
+  }
+  .item {
+    padding: 16px 16px;
+  }
+  .item .text {
+    width:100%;
+  }
+
+  h5 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin: 1rem 0rem;
+    font-family: "Montserrat";
+    color: #272F35;
   }
 }
 
@@ -389,41 +403,53 @@ p.source {
   margin-bottom: 10px;
 }
 
-.boxes-mobile {
-  display: none;
-}
 
 @media only screen and (max-width: 560px) {
+  #boxes {
+    background-color: #FAFBFC;
+    width: 100%;
+    padding: 0px;
+  }
   .course {
-  display: none;
-  }
- .boxes-mobile, .box-mob {
   display: block;
-  background-color: #FEFEFE;
+  width: 100%;
+  }
+  .course img {
+    display: none;
+  }
+  .course p {
+    display: none;
+  }
+  .course span {
+    display: none;
+  }
+  .course-text {
+  padding: 0px 0px;
   }
 
-  .boxes-mobile {
-    width: auto;
-    border: 2px solid purple;
-  }
-
-  h4 {
+  .course,h4 {
     font-weight: bold;
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
     font-family: "Montserrat";
     color: #272F35;
+    font-weight: 600;
+    padding: 0.5rem;
+    margin: 5px 10px;
+    font-size: 1.2rem;
+    background-color: #64AFF1;
   }
 
-  h4:hover {
+  .course,h4:hover {
     font-family: "Montserrat";
     color: white;
-    background-color: #4a90e2;
+    background-color: #64AFF1;
     font-weight: 600;
-    padding: 1rem;
+    padding: 0.5rem;
     margin: 5px 10px;
-    font-size: 1rem;
+    font-size: 1.2rem;
+  }
+  .title-learn {
+    background-color: #FAFBFC;
+    padding: 32px 0px;
   }
 }
 
@@ -431,9 +457,13 @@ p.source {
 
 #thesis {
   display: flex;
-  height: 700px;
+  height: auto;
   padding-bottom: 32px;
   background-color: #FAFBFC;
+}
+
+.banner-video {
+  width: 100%;
 }
 
 .sidebar {
@@ -449,16 +479,24 @@ p.source {
   min-height: 150px;
   flex-direction: row;
   border-bottom: 2px #DCE3E7 solid;
+}
 
 .title-thesis {
   text-align: center;
-  background-color: #FAFBFC;
-  padding-top: 32px;
+  padding: 32px;
+  background-color: #FAFBFC
 }
 
 @media only screen and (max-width: 560px) {
-  .sidebar,.item {
+  .sidebar {
     display: none;
+  }
+  .text-video {
+    display: none;
+  }
+  .main-story {
+    width: 100%;
+    padding: 0px;
   }
 }
 
