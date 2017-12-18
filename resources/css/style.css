@@ -215,6 +215,36 @@ margin-top: 64px;
     width: auto;
     border: 2px solid orange;
   }
+
+  h2 {
+    font-size: 2rem;
+    line-height: 1;
+    padding-right: 50px;
+    font-weight: bold;
+    font-family: "Montserrat";
+    color: #272F35;
+  }
+
+  h1 {
+    font-weight: normal;
+    font-size: 1rem;
+    line-height: 1;
+    margin-top: 1rem;
+    font-family: "Montserrat";
+    color: #272F35;
+  }
+  .cta span{
+    background-color: #64AFF1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem 0;
+    margin: 32px 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition-duration: 1s;
+    transition-property: color;
+  }
 }
 
 /* Features */
@@ -299,9 +329,6 @@ p.source {
   }
   .stories.item,.mobile {
     display: block;
-    max-width:100%;
-    height: auto;
-    padding: 24px;
     border:2px solid red;
   }
   .stories .item {
@@ -310,6 +337,18 @@ p.source {
   }
   .text {
     width: auto;
+  }
+  .main-story {
+    width: 100%;
+    padding: 0px;
+  }
+  .item img {
+    width: 100%;
+    padding: 16px 16px;
+  }
+  .stories .item {
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -371,6 +410,20 @@ p.source {
   background-color: #FAFBFC;
 }
 
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  padding: 0px 32px;
+}
+
+.sidebar .item {
+  display: flex;
+  min-height: 150px;
+  flex-direction: row;
+  border-bottom: 2px #DCE3E7 solid;
+
 .title-thesis {
   text-align: center;
   background-color: #FAFBFC;
@@ -378,7 +431,6 @@ p.source {
 }
 
 @media only screen and (max-width: 560px) {
-
 }
 
 /* Footer */
