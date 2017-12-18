@@ -139,7 +139,7 @@ nav li {
     display: none;
   }
 
-  .menu ul.truncated-menu {
+  .logo ul.truncated-menu {
     display: flex;
   }
 
@@ -523,5 +523,8 @@ p.source {
 @media only screen and (max-width: 560px) {
   .last li a{
     display: none;
+  }
+  #footer p {
+    font-size: 0.7rem;
   }
 }
