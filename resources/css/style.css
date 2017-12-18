@@ -146,6 +146,9 @@ nav li {
   .logo span {
     display: none;
   }
+  .container {
+    justify-content: center;
+  }
 }
 
 /* Banner */
