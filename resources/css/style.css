@@ -504,7 +504,7 @@ p.source {
 
 /* Footer */
 
-#footer {
+footer {
   display: flex;
   justify-content: space-between;
   border-top: 2px #DCE3E7 solid;
@@ -527,7 +527,7 @@ p.source {
   .last li a{
     display: none;
   }
-  #footer p {
+  footer p {
     font-size: 0.7rem;
   }
 }
